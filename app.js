@@ -7,11 +7,17 @@ app.controller('todoController', function($scope) {
     // Add a new todo item to the list
     $scope.addTodo = function() {
         if ($scope.newTodoText) {
+            // Get current date and time as the timestamp
+            var now = new Date();
+            var timestamp = now.toLocaleString();  // Format the date and time as a string
+
+            // Add the todo with text and timestamp
             $scope.todos.push({
                 text: $scope.newTodoText,
-                done: false
+                done: false,
+                timestamp: timestamp  // Add timestamp to the todo
             });
-            $scope.newTodoText = '';
+            $scope.newTodoText = '';  // Clear the input field
         }
     };
 
