@@ -1,0 +1,127 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f9d423, #3b82f6); /* Yellow to blue gradient */
+  color: #333;
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adds a subtle shadow */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Button styling */
+form button {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5722; /* Vibrant orange */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow to buttons */
+}
+
+form button:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Todo list styling */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
+  border-radius: 5px;
+  margin: 10px 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Shadow on list items */
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Input fields inside todo list */
+li input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Buttons for editing, saving, and deleting todos */
+li button {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+li button.edit {
+  background-color: #2196F3; /* Blue for edit */
+}
+
+li button.save {
+  background-color: #4CAF50; /* Green for save */
+}
+
+li button.delete {
+  background-color: #f44336; /* Red for delete */
+}
+
+li button:hover {
+  opacity: 0.8; /* Add hover effect */
+}
+
+/* Completed task styling */
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.notification {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  margin: 20px;
+}
